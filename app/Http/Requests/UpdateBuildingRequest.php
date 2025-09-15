@@ -17,7 +17,7 @@ class UpdateBuildingRequest extends FormRequest
             'city' => ['sometimes', 'string', 'max:255'],
             'room_amount' => ['sometimes', 'integer', 'min:0'],
             'bathroom_amount' => ['sometimes', 'integer', 'min:0'],
-            'type_consignement' => ['sometimes', 'in:sale,rent'],
+            'type_consignement' => ['sometimes', 'in:sale,lease'],
             'rental_value' => ['nullable', 'numeric', 'min:0'],
             'sale_value' => ['nullable', 'numeric', 'min:0'],
         ];
